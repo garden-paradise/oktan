@@ -1,0 +1,21 @@
+.UlLi {
+  &-title {
+    font-size: 20px;
+    font-family: 'Montserrat-SemiBold';
+  }
+  &-subtitle {
+    margin-top: 25px;
+    list-style-type: none;
+    display: flex;
+  }
+  &-subtitle::before {
+    content: url('./../../images/main/home/Drop.png');
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .UlLi {
+    margin-top: 50px;
+  }
+}

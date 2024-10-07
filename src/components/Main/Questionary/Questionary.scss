@@ -1,0 +1,74 @@
+.questionary {
+  background-image: url('./../../../images/main/fon/5.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 53vw -50px;
+  &-one {
+    max-width: 630px;
+  }
+}
+
+.formMini {
+  &-forms {
+    display: flex;
+    flex-direction: column;
+    max-width: 1160px;
+  }
+  &-forms input {
+    text-indent: 0;
+  }
+  &-title {
+    font-family: 'Gilroy-Medium';
+    font-size: 30px;
+    margin: 100px 0 50px;
+  }
+  &-form {
+    max-width: 745px;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    padding: 12px 0;
+    color: black;
+    margin-top: 20px;
+  }
+  &-form::-webkit-input-placeholder {
+    color: #c9c9c9;
+    font-size: 20px;
+    text-indent: 0;
+  }
+  &-formError {
+    border-bottom: 2px solid red;
+  }
+  &-btn {
+    background: #34b806;
+    color: white;
+    margin: 0 auto;
+  }
+}
+
+.formBig {
+  &-tableQuestionary {
+    margin: 100px 0;
+  }
+  &-formBlack {
+    color: black;
+  }
+  &-tableQuestionary TD {
+    border: 1px solid #000000;
+  }
+  &-tableQuestionary TH {
+    border: 1px solid #000000;
+  }
+}
+
+@media (max-width: 480px) {
+  .formMini {
+    &-form::-webkit-input-placeholder {
+      font-size: 18px;
+    }
+  }
+  .formBig {
+    &-tableQuestionary {
+      margin: 50px 0;
+    }
+  }
+}

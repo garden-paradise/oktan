@@ -1,0 +1,37 @@
+.plug {
+  background-image: url('./../../images/main/fon/1.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 700px;
+  background-position: 60vw;
+  // background-position: 1350px -160px;
+  &-text {
+    font-size: 100px;
+    color: #117811;
+    font-family: 'Gilroy-Bold';
+    line-height: 90px;
+    padding: 20vw 0;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .plug {
+    &-text {
+      font-size: 70px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .plug {
+    background-image: url('./../../images/main/fon/1.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 300px;
+    background-position: 120px 300px;
+    &-text {
+      font-size: 50px;
+      padding: 40vw 0;
+    }
+  }
+}

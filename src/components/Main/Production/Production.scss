@@ -1,0 +1,18 @@
+.production {
+  background-image: url('./../../../images/main/fon/1.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 1100px 750px;
+  &-form {
+    margin-top: 7vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .production {
+    margin-top: 50px;
+    &-form {
+      margin-top: 50px;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@mixin Form {
+  background-color: inherit;
+  border: 0;
+  border: 3px solid white;
+}
+
+.formBig {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#117811),
+    to(#36bd04)
+  );
+  background: -o-linear-gradient(right, #117811 0%, #36bd04 100%);
+  background: linear-gradient(270deg, #117811 0%, #36bd04 100%);
+  padding: 70px 0;
+  max-width: 1920px;
+  margin: 0 auto;
+  &-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+  &-payForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 5vw;
+    width: 760px;
+  }
+  &-forms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 350px));
+    grid-gap: 30px 60px;
+  }
+  &-form {
+    height: 50px;
+    @include Form;
+  }
+  &-formError {
+    border: 2px solid red;
+  }
+  &-formComment {
+    @include Form;
+    height: 96px;
+    margin-top: 30px;
+  }
+  &-formBtn {
+    color: #168110;
+    margin: 50px auto 0;
+    cursor: pointer;
+  }
+  &-table {
+    color: white;
+    margin-top: 30px;
+  }
+  &-formTable {
+    background-color: inherit;
+    width: 100%;
+    padding: 0;
+    text-indent: 0;
+    border: 0;
+  }
+  &-formTableTD {
+    padding: 5px 10px;
+  }
+}
+TABLE {
+  border-collapse: collapse;
+}
+TD,
+TH {
+  padding: 20px;
+  border: 1px solid white;
+  font-family: 'Montserrat-Medium';
+}
+@media (max-width: 1480px) {
+  .formBig {
+    padding-bottom: 80px;
+    &-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    &-payForm {
+      margin: 50px 0 0;
+      max-width: 760px;
+    }
+    &-img {
+      width: 300px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .formBig {
+    &-payForm {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    &-img {
+      margin-bottom: 50px;
+    }
+    &-forms {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+}
+@media (max-width: 600px) {
+  TD,
+  TH {
+    padding: 14px 8px;
+  }
+}
+@media (max-width: 480px) {
+  .formBig {
+    &-block {
+      display: block;
+    }
+    &-img {
+      display: none;
+    }
+    &-formComment {
+      height: 200px;
+    }
+  }
+  TD,
+  TH {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

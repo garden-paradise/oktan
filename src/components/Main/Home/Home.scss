@@ -1,0 +1,188 @@
+@mixin TextBold {
+  font-size: 20px;
+  font-family: 'Montserrat-SemiBold';
+}
+
+.home {
+  background-image: url('./../../../images/main/fon/1.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 600px;
+  background-position: 1300px 1200px;
+  max-width: 1920px;
+  margin: 0 auto;
+  &-fourBlock {
+    font-size: 70px;
+    color: #34b806;
+  }
+  &-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1470px;
+    margin: 0 auto;
+  }
+  &-oneText,
+  &-twoText {
+    max-width: 600px;
+  }
+  &-oneTextBold {
+    margin: 40px 0 40px 30px;
+    padding-left: 15px;
+    border-left: 4px solid #34b806;
+    @include TextBold;
+  }
+  &-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1540px;
+  }
+  &-twoTextBold {
+    @include TextBold;
+  }
+  &-twoTextSubtitle {
+    margin: 40px 0;
+  }
+  &-three {
+    max-width: 1470px;
+    margin: 0 auto;
+  }
+  &-threeBtn {
+    color: white;
+    background-color: #34b806;
+    margin: 100px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &-four {
+    padding: 100px 0;
+    margin-bottom: 150px;
+    background: -o-linear-gradient(left, #117811 0%, #36bd04 100%);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#117811),
+      to(#36bd04)
+    );
+    background: linear-gradient(90deg, #117811 0%, #36bd04 100%);
+  }
+  &-fourBlock {
+    max-width: 1695px;
+    margin-left: 10vw;
+  }
+  &-five,
+  &-seven {
+    max-width: 1470px;
+    margin: 0 auto;
+  }
+  &-fon {
+    background-image: url('./../../../images/main/fon/4.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0 4300px;
+  }
+  &-fiveTitle {
+    margin-bottom: 100px;
+  }
+  &-eight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: -o-linear-gradient(left, #117811 0%, #36bd04 100%);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#117811),
+      to(#36bd04)
+    );
+    background: linear-gradient(90deg, #117811 0%, #36bd04 100%);
+  }
+}
+
+#about,
+#benefits,
+#news {
+  padding-top: 20px;
+}
+
+@media (max-width: 1870px) {
+  .home {
+    &-eight {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 50px 0;
+    }
+    &-eightImg {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .home {
+    &-oneText,
+    &-twoText {
+      max-width: 700px;
+    }
+    &-twoText {
+      margin: 0 50px;
+    }
+    &-fourBlock {
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .home {
+    margin-top: 50px;
+    &-oneTextBold {
+      margin: 30px 0 30px 10px;
+    }
+    &-twoText {
+      margin: 0 16px;
+    }
+    &-threeBtn {
+      margin: 50px auto 0;
+    }
+    &-fourBlock {
+      margin-left: 0;
+    }
+    &-four {
+      padding: 50px 0;
+      margin: 50px 0;
+    }
+    &-fourTitle {
+      margin: 0 16px 50px;
+    }
+    &-fiveTitle {
+      margin-bottom: 50px;
+    }
+    &-fon {
+      background-position: 10000px 0;
+    }
+  }
+}

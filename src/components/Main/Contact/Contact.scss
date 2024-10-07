@@ -1,0 +1,46 @@
+.contacts {
+  background-image: url('./../../../images/main/fon/1.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 700px;
+  background-position: 1350px -50px;
+  display: flex;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  &-block {
+    margin-left: 5vw;
+  }
+  &-title {
+    color: black;
+  }
+}
+@media (max-width: 1600px) {
+  .contacts {
+    &-img {
+      max-width: 40%;
+    }
+    &-block {
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .contacts {
+    flex-direction: column;
+    &-img {
+      margin-top: 50px;
+    }
+    &-block {
+      margin: 50px 0;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .contacts {
+    &-img {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+}

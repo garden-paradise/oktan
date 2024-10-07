@@ -1,0 +1,40 @@
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  width: 90%;
+  font-size: 50px;
+  font-family: 'Gilroy-Medium';
+  &-top {
+    margin-top: 150px;
+  }
+  &-titleW {
+    color: white;
+  }
+  &-titleB {
+    color: black;
+  }
+  &-block {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+  }
+  &-arrow {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrows {
+    margin: 0 16px 50px 16px;
+    font-size: 30px;
+    &-top {
+      margin-top: 50px;
+    }
+    &-block {
+      width: 70px;
+    }
+  }
+}

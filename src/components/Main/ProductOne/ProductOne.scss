@@ -1,0 +1,239 @@
+@mixin Container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+.productOne {
+  background-image: url('./../../../images/main/fon/1.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 52vw 870px;
+  // background-position: 1000px 870px;
+  &-one,
+  &-two {
+    @include Container();
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  &-oneInfo {
+    margin-right: 57px;
+  }
+  &-oneSubtitle {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 26px;
+    max-width: 620px;
+  }
+  &-text {
+    margin-top: 30px;
+  }
+  &-twoInfo {
+    margin: 50px 0 0 5vw;
+  }
+  &-three,
+  &-four {
+    @include Container();
+    margin: 120px auto 0;
+  }
+  &-fon {
+    background-image: url('./../../../images/main/fon/2.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 1100px 2600px;
+  }
+  &-threeText {
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  &-fourText {
+    max-width: 1035px;
+    margin-bottom: 30px;
+  }
+  &-fourTextBold {
+    font-family: 'Montserrat-Medium';
+    font-size: 22px;
+  }
+  &-fourUlLi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  &-blockBold {
+    font-family: 'Montserrat-Medium';
+    margin-top: 30px;
+  }
+  &-eight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  &-eightInfo {
+    margin-left: 50px;
+    max-width: 746px;
+  }
+  &-eightTextBold {
+    font-family: 'Montserrat-Medium';
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  &-nine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 100px;
+  }
+  &-nineInfo {
+    margin-left: 43px;
+    max-width: 746px;
+  }
+  &-textBold {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 26px;
+    max-width: 1015px;
+    margin-top: 50px;
+  }
+  &-galleryCarousel {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .productOne {
+    &-eightImg {
+      width: 30vw;
+    }
+    &-nine {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    &-nineInfo {
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .productOne {
+    &-one {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    &-two {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    &-oneInfo {
+      margin: 0 0 50px;
+      max-width: 1035px;
+    }
+    &-twoInfo {
+      margin: 50px 0;
+      max-width: 1035px;
+    }
+    &-three {
+      margin: inherit auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    &-three,
+    &-four {
+      margin-top: 50px;
+    }
+    &-fourTitle {
+      max-width: 1035px;
+      margin: 50px auto;
+    }
+    &-fourText {
+      margin: 30px auto;
+    }
+    &-fourUlLi {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    &-mini {
+      margin: 50px auto 0;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .productOne {
+    &-eightImg {
+      display: none;
+    }
+    &-eightInfo {
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .productOne {
+    background-image: url('./../../../images/main/fon/1.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-attachment: scroll;
+    background-position: -80px 6950px;
+    &-nine {
+      margin-top: 50px;
+    }
+    &-textBold {
+      font-size: 24px;
+    }
+    &-oneSubtitle {
+      font-size: 24px;
+    }
+    &-twoInfo {
+      margin-top: 0;
+    }
+    &-fourTitle {
+      margin-top: 30px;
+    }
+    &-four {
+      margin-top: 0;
+    }
+    &-down {
+      margin-bottom: 0;
+    }
+    &-galleryCarousel {
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@mixin Title {
+  font-size: 24px;
+  font-family: 'Gilroy-Semibold';
+  padding-left: 30px;
+}
+.productCards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 460px));
+  // grid-template-rows: repeat(auto-fill, 460px);
+  grid-gap: 45px;
+}
+.title {
+  max-width: 1470px;
+  margin: 0 auto 50px;
+}
+.productCard {
+  cursor: pointer;
+  &-title {
+    @include Title;
+    margin: 12px 0;
+    display: flex;
+  }
+  &-arrow {
+    margin-left: 10px;
+  }
+  &-arrowW {
+    margin-left: 10px;
+    display: none;
+  }
+  &-subtitle {
+    color: #898989;
+    padding: 0 20% 0 30px;
+  }
+  &:hover {
+    background: url('./../../images/main/home/b3_1.png');
+  }
+  &:hover &-img {
+    opacity: 0;
+  }
+  &:hover &-title {
+    color: white;
+  }
+  &:hover &-subtitle {
+    opacity: 0;
+  }
+  &:hover &-arrow {
+    display: none;
+  }
+  &:hover &-arrowW {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .productCards {
+    // grid-template-rows: repeat(6, 100vw);
+    grid-gap: 20px;
+  }
+  .productCard {
+    &-title {
+      font-size: 20px;
+      padding-left: 10px;
+    }
+
+    &-subtitle {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+}

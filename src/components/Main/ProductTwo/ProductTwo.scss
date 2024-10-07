@@ -1,0 +1,51 @@
+.productTwo {
+  background-image: url('./../../../images/main/fon/1.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 51vw 370px;
+  &-one {
+    max-width: 1460px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+  &-oneInfo {
+    max-width: 630px;
+  }
+  &-oneSubtitle {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 26px;
+  }
+  &-text {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .productTwo {
+    &-one {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    &-oneInfo {
+      margin: 0 0 50px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .productTwo {
+    &-one {
+      margin-bottom: 50px;
+    }
+  }
+}
