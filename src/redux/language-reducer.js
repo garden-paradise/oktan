@@ -254,10 +254,6 @@ const initialState = {
     interrogatory: { RU: 'Опросный лист', EN: 'Interrogatory' },
     moscow: { RU: 'Телефон в Москве:', EN: 'Phone in Moscow:' },
     estonia: { RU: 'Телефон в Эстонии:', EN: 'Phone in Estonia:' },
-    company: {
-      RU: 'Сайт создан компанией',
-      EN: 'The site was created by the company',
-    },
     rights: {
       RU: 'Все права защищены',
       EN: 'All rights reserved',

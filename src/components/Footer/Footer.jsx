@@ -43,18 +43,8 @@ const Footer = ({ language, FOOTER }) => {
         </div>
       </div>
       <div className='footer-argo'>
-        {FOOTER.company[language]}
-        <b>
-          <a
-            className='footer-site'
-            target='_blank'
-            href='https://argo-soft-works.ru/'
-          >
-            ArgoSoftWorks
-          </a>
-        </b>
       </div>
-      <div className='footer-allRights'>© 2022 {FOOTER.rights[language]} </div>
+      <div className='footer-allRights'>© 2024 {FOOTER.rights[language]} </div>
     </header>
   );
 };
