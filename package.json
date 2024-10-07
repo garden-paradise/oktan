@@ -1,6 +1,7 @@
 {
   "name": "oktan",
   "version": "0.1.0",
+  "homepage": "https://garden-paradise.github.io/oktan/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
